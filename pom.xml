@@ -20,6 +20,7 @@
         <module>eureka - slave7004</module>
         <module>eureka - slave7005</module>
         <module>cloud-consumer-dept</module>
+        <module>cloud-consumer-dept - feign</module>
     </modules>
 
 
