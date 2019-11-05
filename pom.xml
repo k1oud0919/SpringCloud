@@ -14,6 +14,7 @@
     <modules>
         <module>dept</module>
         <module>cloud-dept</module>
+        <module>cloud-dept - hystrix</module>
         <module>cloud-dept - provider8002</module>
         <module>cloud-dept - provider8003</module>
         <module>eureka</module>
