@@ -10,7 +10,7 @@
     </parent>
 
 
-    <artifactId>cloud-dept</artifactId>
+    <artifactId>cloud-dept - provider8002</artifactId>
     <description>因为父工程已经定义了这些版本号什么的，所以都可以省略</description>
     <packaging>jar</packaging>
 

@@ -14,6 +14,8 @@
     <modules>
         <module>dept</module>
         <module>cloud-dept</module>
+        <module>cloud-dept - provider8002</module>
+        <module>cloud-dept - provider8003</module>
         <module>eureka</module>
         <module>eureka - slave7004</module>
         <module>eureka - slave7005</module>
