@@ -15,6 +15,9 @@
         <module>dept</module>
         <module>cloud-dept</module>
         <module>eureka</module>
+        <module>eureka - slave7004</module>
+        <module>eureka - slave7005</module>
+        <module>cloud-consumer-dept</module>
     </modules>
 
 
