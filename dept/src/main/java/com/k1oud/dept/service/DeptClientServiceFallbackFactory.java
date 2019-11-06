@@ -14,6 +14,8 @@ public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptCli
 	@Autowired
 	Dept dept;
 
+	//针对每一个接口里的所有方法，都有各自对应的工厂 implements FallbackFactory<对应接口名>
+	//每一个方法的熔断机制都卸载重写的create()里面
 	@Override
 	public DeptClientService create(Throwable throwable)
 	{
@@ -30,12 +32,14 @@ public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptCli
 			@Override
 			public List<Dept> list()
 			{
+				//这里面写针对list（）方法异常代码
 				return null;
 			}
 
 			@Override
 			public boolean add(Dept dept)
 			{
+				//add（）方法异常代码
 				return false;
 			}
 		};

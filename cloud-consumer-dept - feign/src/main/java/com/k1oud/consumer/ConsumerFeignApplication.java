@@ -8,8 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(basePackages= {"com.k1oud.dept"})
-@ComponentScan("com.k1oud.dept")
+//这里这个扫描包应该是扫自己的吧，其他的包他也扫不了啊
+//我觉得应该是这些微服务共同的包名
+@EnableFeignClients(basePackages = {"com.k1oud"})
+@ComponentScan("com.k1oud")
 public class ConsumerFeignApplication {
 
     public static void main(String[] args) {

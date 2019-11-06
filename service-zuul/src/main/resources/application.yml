@@ -1,0 +1,30 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7004.com:7004/eureka,http://eureka7005.com:7005/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+
+
+zuul:
+  #ignored-services: microservicecloud-dept
+  prefix: /k1oud
+  ignored-services: "*"
+  routes:
+    mydept.serviceId: springcloud-dept
+    mydept.path: /mydept/**
+
+info:
+  app.name: spring-k1oud
+  company.name: www.k1oud.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+

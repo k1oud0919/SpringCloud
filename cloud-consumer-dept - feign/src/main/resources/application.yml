@@ -1,6 +1,10 @@
 server:
   port: 81
 
+#注意，这里feign与hystrix无法整合上网查了是因为版本问题！待解决
+feign:
+  hystrix:
+    enabled: true
 
 eureka:
   client:
